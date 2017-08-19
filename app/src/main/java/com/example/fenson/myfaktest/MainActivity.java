@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
         final TextView result3 = (TextView)findViewById(R.id.text_result3);
         String URL ="http://asiapocc.000webhostapp.com/selectShift.php";   // Request a string response from the provided URL.
 
-        RequestBody BODY = new FormBody.Builder().add("id","2").add("name","Y.J.Chen").build();
+        RequestBody BODY = new FormBody.Builder().add("id","1").add("name","Y.J.Chen").build();
 
         Request REQ = new Request.Builder().url(URL).post(BODY).build();
         Call call = OHC.newCall(REQ);
